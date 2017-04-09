@@ -16,7 +16,7 @@ int main(){
 	int matriz1 [50] [50];
 	int matriz2 [50] [50];
 	int matriz3 [50] [50];
-	//Semente do números aleatorios
+	//Semente do nÃºmeros aleatorios
 	srand((int) time(0));
 	int opcao;
 	bool enquanto = false;
@@ -81,7 +81,7 @@ int main(){
 						system("cls");
 						cout << "O usuario deseja: " << endl;
 						cout << "1 - Ver a matiz gerada aleatoriamente" << endl;
-						cout << "2 - Continuar com a multiplicação" << endl;
+						cout << "2 - Continuar com a multiplicaÃ§Ã£o" << endl;
 						cin >> opcao;
 						system("cls");
 						//Ver se o usario quer ver a matriz gerada aleatoriamente
@@ -127,7 +127,7 @@ int main(){
 				system("cls");
 				break;
 			case 2:
-				cout << "OBS: a matrizes so poderam ser multiplicadas se o numero de colunas da 1º (primeira) matriz for igual ao numero de linhas da 2º (segunda) matriz" << endl;
+				cout << "OBS: a matrizes so poderam ser multiplicadas se o numero de colunas da 1Âº (primeira) matriz for igual ao numero de linhas da 2Âº (segunda) matriz" << endl;
 				cout << endl;
 				system("pause");
 				system("cls");
@@ -162,7 +162,7 @@ int main(){
 						case 1:
 							//Preenchimento da matriz pelo usuario
 							//Da primeira matriz
-							cout << "1º Matriz " << endl;
+							cout << "1Âº Matriz " << endl;
 							for(int l = 0; l < linha1; l++){
 								for(int c = 0; c < coluna1; c++){
 									cout << l + 1 << " linha " << c + 1 << " coluna" << endl;
@@ -171,7 +171,7 @@ int main(){
 							}
 							system("cls");
 							//Da segunda matriz
-							cout << "2º Matriz " << endl;
+							cout << "2Âº Matriz " << endl;
 							for(int l = 0; l < linha2; l++){
 								for(int c = 0; c < coluna2; c++){
 									cout << l + 1 << " linha " << c + 1 << " coluna" << endl;
@@ -210,7 +210,7 @@ int main(){
 					}
 					system("cls");
 					system("pause");
-					//Imprime o resultado da multiplicação das matrizes (matriz1 x matriz2) na tela
+					//Imprime o resultado da multiplicaÃ§Ã£o das matrizes (matriz1 x matriz2) na tela
 					for(int l = 0; l < linha1; l++){
 						for(int c = 0; c < coluna2; c++){
 					    	cout << matriz3 [l][c] << " | ";
@@ -222,12 +222,12 @@ int main(){
 				}
 				//Caso a condicao do if nao seja verdadeira ira imprimir
 				else{
-					cout << "ERRO: O numero de colunas da 1º matriz nao esta igual ao numero de linhas da 2º matriz" << endl;
+					cout << "ERRO: O numero de colunas da 1Âº matriz nao esta igual ao numero de linhas da 2Âº matriz" << endl;
 					system("pause");
 					system("cls");
 				}
 				break;
-			//Para sair do laço while
+			//Para sair do laÃ§o while
 			case 3:
 				enquanto = true;
 				break;
